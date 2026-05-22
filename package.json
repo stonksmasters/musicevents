@@ -1,0 +1,23 @@
+{
+  "name": "musicevents-bot",
+  "version": "0.1.0",
+  "description": "Discord bot that runs music collaboration events: pairs artists, manages submissions, and runs voting.",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js",
+    "deploy": "node src/deploy-commands.js",
+    "dryrun": "node scripts/dryrun.js",
+    "check": "node -c src/index.js && echo OK"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.3.0",
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5",
+    "express": "^5.2.1",
+    "express-session": "^1.19.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
